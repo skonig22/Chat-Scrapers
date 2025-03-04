@@ -67,7 +67,7 @@ async def on_message(message):
     await send_to_client(msg)
 
 async def main():
-    # First run the socket server in a thread, then start the Discord bot
+    # First run the socket server until client accepted, then start the Discord bot
     loop = asyncio.get_running_loop()
 
     # Run the blocking socket server in a separate thread
